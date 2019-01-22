@@ -1,0 +1,110 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+    {
+        background-color: crimson;
+    }  
+
+p
+{
+    padding: 20px;
+    
+    font-weight: 600;
+    
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+.item
+{
+    background-color: white;
+    
+    width: 500px;
+    height: 100px;
+    
+    border: 1px black solid;
+    
+    animation: mouseLeave 0.2s;
+}
+
+.item:hover
+{
+    animation: hoverEffect 0.2s ease-out;
+    animation-fill-mode: both;
+    
+    z-index: 2;
+}
+
+.grid-container
+{
+    display: flex;
+    
+    margin: auto;
+    width: 60%;
+    
+    text-align: center;
+}
+
+.rigtig-grid
+{
+    padding-top: 80px;
+}
+
+@keyframes hoverEffect
+{
+    from 
+    {
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        
+        width: 500px;
+    }
+    
+    to
+    {
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+        
+        width: 600px;
+    }
+}
+    
+@keyframes mouseLeave
+{
+    from 
+    {
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+        
+        width: 600px;
+    }
+    
+    to
+    {
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        
+        width: 500px;
+    }
+}
+    
+    @keyframes lul
+{
+    from 
+    {
+        width: 500px;
+    }
+    
+    to
+    {
+        width: 900px;
+    }
+}
+
+
+
+    
+/*NORMAL DESKTOP*/
+@media (max-width: 1024px)
+{
+    
+}
